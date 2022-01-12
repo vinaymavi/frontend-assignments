@@ -27,15 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Copy file to docs folder
-        run: 
-        if(push==|./Assignment/src/*){
+        run: | 
           cp ./Assignment1/src/* ./docs/
           ls ./docs
-          }
-          else{
-          cp |./Assgnment2/src/* ./docs/
-          ls ./docs
-          }
+          
+        
+        
       - uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
