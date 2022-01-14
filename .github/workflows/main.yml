@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Copy file to docs folder
         run: | 
-          cp ./Assignment1/src/* ./docs/assignment1/
+          cp ./Assignment1/src/* ./docs/
           ls ./docs
          
       - uses: EndBug/add-and-commit@v7
