@@ -30,9 +30,8 @@ jobs:
         run: |
           cp ./Assignment1/src/* ./docs/
           ls ./docs
-      - uses: EndBug/add-and-commit@v7
-        with:
-          default_author: github_actions
-          message: Move files to docs
-          committer_name: GitHub Actions
-          committer_email: actions@github.com
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
